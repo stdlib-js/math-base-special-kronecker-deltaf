@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/math-base-special-kronecker-deltaf",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Evaluate the Kronecker delta (single-precision).",
   "license": "Apache-2.0",
   "author": {
