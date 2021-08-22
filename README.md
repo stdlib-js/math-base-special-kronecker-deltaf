@@ -28,10 +28,10 @@ limitations under the License.
 
 The [Kronecker delta][kronecker-delta] is defined as
 
-<!-- <equation class="equation" label="eq:kronecker_deltaf" align="center" raw="\delta_{ij} = \begin{cases} 1 & \textrm{if}\ i = j \\ 0 & \textrm{if}\ i \neq j\end{cases}" alt="Kronecker delta."> -->
+<!-- <equation class="equation" label="eq:kronecker_delta" align="center" raw="\delta_{ij} = \begin{cases} 1 & \textrm{if}\ i = j \\ 0 & \textrm{if}\ i \neq j\end{cases}" alt="Kronecker delta."> -->
 
-<div class="equation" align="center" data-raw-text="\delta_{ij} = \begin{cases} 1 &amp; \textrm{if}\ i = j \\ 0 &amp; \textrm{if}\ i \neq j\end{cases}" data-equation="eq:kronecker_deltaf">
-    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@d89237997cd461e30bc384675d242b76d7d88e64/lib/node_modules/@stdlib/math/base/special/kronecker-deltaf/docs/img/equation_kronecker_deltaf.svg" alt="Kronecker delta.">
+<div class="equation" align="center" data-raw-text="\delta_{ij} = \begin{cases} 1 &amp; \textrm{if}\ i = j \\ 0 &amp; \textrm{if}\ i \neq j\end{cases}" data-equation="eq:kronecker_delta">
+    <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@b245da8d5397f5cf6a71ec8a0147cf47d876eeb7/lib/node_modules/@stdlib/math/base/special/kronecker-deltaf/docs/img/equation_kronecker_delta.svg" alt="Kronecker delta.">
     <br>
 </div>
 
@@ -219,6 +219,11 @@ For more information on the project, filing bug reports and feature requests, an
 
 ---
 
+## License
+
+See [LICENSE][stdlib-license].
+
+
 ## Copyright
 
 Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
@@ -249,6 +254,8 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [stdlib]: https://github.com/stdlib-js/stdlib
 
 [stdlib-authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
+
+[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/math-base-special-kronecker-deltaf/main/LICENSE
 
 [kronecker-delta]: https://en.wikipedia.org/wiki/Kronecker_delta
 
