@@ -91,12 +91,12 @@ v = kroneckerDeltaf( NaN, NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var linspace = require( '@stdlib/array-linspace' );
+var linspace = require( '@stdlib/array-base-linspace' );
 var kroneckerDeltaf = require( '@stdlib/math-base-special-kronecker-deltaf' );
 
 var x = linspace( -1.0, 1.0, 101 );
-var i;
 
+var i;
 for ( i = 0; i < x.length; i++ ) {
     console.log( 'kronecker(%d,%d) = %d', x[ i ], 0.0, kroneckerDeltaf( x[ i ], 0.0 ) );
 }
@@ -235,11 +235,6 @@ For more information on the project, filing bug reports and feature requests, an
 
 ---
 
-## License
-
-See [LICENSE][stdlib-license].
-
-
 ## Copyright
 
 Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
@@ -274,8 +269,6 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [stdlib]: https://github.com/stdlib-js/stdlib
 
 [stdlib-authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
-
-[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/math-base-special-kronecker-deltaf/main/LICENSE
 
 [kronecker-delta]: https://en.wikipedia.org/wiki/Kronecker_delta
 
