@@ -208,7 +208,7 @@ int main() {
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/math/base/special/kronecker-delta`][@stdlib/math/base/special/kronecker-delta]</span><span class="delimiter">: </span><span class="description">evaluate the Kronecker delta.</span>
+-   <span class="package-name">[`@stdlib/math-base/special/kronecker-delta`][@stdlib/math/base/special/kronecker-delta]</span><span class="delimiter">: </span><span class="description">evaluate the Kronecker delta.</span>
 
 </section>
 
