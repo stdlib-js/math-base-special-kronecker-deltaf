@@ -30,10 +30,14 @@ The [Kronecker delta][kronecker-delta] is defined as
 
 <!-- <equation class="equation" label="eq:kronecker_delta" align="center" raw="\delta_{ij} = \begin{cases} 1 & \textrm{if}\ i = j \\ 0 & \textrm{if}\ i \neq j\end{cases}" alt="Kronecker delta."> -->
 
-<div class="equation" align="center" data-raw-text="\delta_{ij} = \begin{cases} 1 &amp; \textrm{if}\ i = j \\ 0 &amp; \textrm{if}\ i \neq j\end{cases}" data-equation="eq:kronecker_delta">
+```math
+\delta_{ij} = \begin{cases} 1 & \textrm{if}\ i = j \\ 0 & \textrm{if}\ i \neq j\end{cases}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="\delta_{ij} = \begin{cases} 1 &amp; \textrm{if}\ i = j \\ 0 &amp; \textrm{if}\ i \neq j\end{cases}" data-equation="eq:kronecker_delta">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@b245da8d5397f5cf6a71ec8a0147cf47d876eeb7/lib/node_modules/@stdlib/math/base/special/kronecker-deltaf/docs/img/equation_kronecker_delta.svg" alt="Kronecker delta.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -41,14 +45,30 @@ The [Kronecker delta][kronecker-delta] is defined as
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/math-base-special-kronecker-deltaf
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import kroneckerDeltaf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-kronecker-deltaf@deno/mod.js';
+var kroneckerDeltaf = require( '@stdlib/math-base-special-kronecker-deltaf' );
 ```
 
 #### kroneckerDeltaf( i, j )
@@ -83,8 +103,8 @@ v = kroneckerDeltaf( NaN, NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import linspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-linspace@deno/mod.js';
-import kroneckerDeltaf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-kronecker-deltaf@deno/mod.js';
+var linspace = require( '@stdlib/array-base-linspace' );
+var kroneckerDeltaf = require( '@stdlib/math-base-special-kronecker-deltaf' );
 
 var x = linspace( -1.0, 1.0, 101 );
 
@@ -100,7 +120,89 @@ for ( i = 0; i < x.length; i++ ) {
 
 <!-- C interface documentation. -->
 
+* * *
 
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/kronecker_deltaf.h
+```
+
+#### stdlib_base_kronecker_deltaf( i, j )
+
+Evaluates the Kronecker delta (single-precision).
+
+```c
+float v = stdlib_base_kronecker_deltaf( 3.0f, 3.0f );
+// returns 1.0f
+```
+
+The function accepts the following arguments:
+
+-   **i**: `[in] float` input value.
+-   **j**: `[in] float` input value.
+
+```c
+float stdlib_base_kronecker_delta( const float i, const float j );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/kronecker_deltaf.h"
+#include <stdio.h>
+
+int main() {
+    float x[] = { 3.0f, 4.0f, 5.0f, 5.0f };
+
+    float y;
+    int i;
+    for ( i = 0; i < 4; i += 2 ) {
+        y = stdlib_base_kronecker_deltaf( x[ i ], x[ i+1 ] );
+        printf( "kronecker_delta(%f, %f) = %f\n", x[ i ], x[ i+1 ], y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -125,7 +227,7 @@ for ( i = 0; i < x.length; i++ ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -134,11 +236,6 @@ For more information on the project, filing bug reports and feature requests, an
 [![Chat][chat-image]][chat-url]
 
 ---
-
-## License
-
-See [LICENSE][stdlib-license].
-
 
 ## Copyright
 
@@ -169,7 +266,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 -->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://gitter.im/stdlib-js/stdlib/
+[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
@@ -183,13 +280,11 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [esm-url]: https://github.com/stdlib-js/math-base-special-kronecker-deltaf/tree/esm
 [branches-url]: https://github.com/stdlib-js/math-base-special-kronecker-deltaf/blob/main/branches.md
 
-[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/math-base-special-kronecker-deltaf/main/LICENSE
-
 [kronecker-delta]: https://en.wikipedia.org/wiki/Kronecker_delta
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/special/kronecker-delta]: https://github.com/stdlib-js/math-base-special-kronecker-delta/tree/deno
+[@stdlib/math/base/special/kronecker-delta]: https://github.com/stdlib-js/math-base-special-kronecker-delta
 
 <!-- </related-links> -->
 
