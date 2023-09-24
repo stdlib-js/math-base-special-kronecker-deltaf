@@ -63,7 +63,7 @@ The [Kronecker delta][kronecker-delta] is defined as
 ## Usage
 
 ```javascript
-import kroneckerDeltaf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-kronecker-deltaf@esm/index.mjs';
+import kroneckerDeltaf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-kronecker-deltaf@v0.1.0-esm/index.mjs';
 ```
 
 #### kroneckerDeltaf( i, j )
@@ -104,7 +104,7 @@ v = kroneckerDeltaf( NaN, NaN );
 <script type="module">
 
 import linspace from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-linspace@esm/index.mjs';
-import kroneckerDeltaf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-kronecker-deltaf@esm/index.mjs';
+import kroneckerDeltaf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-kronecker-deltaf@v0.1.0-esm/index.mjs';
 
 var x = linspace( -1.0, 1.0, 101 );
 
