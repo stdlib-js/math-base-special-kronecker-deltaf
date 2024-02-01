@@ -56,38 +56,32 @@ The [Kronecker delta][kronecker-delta] is defined as
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/math-base-special-kronecker-deltaf
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-kroneckerDeltaf = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-kronecker-deltaf@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var kroneckerDeltaf = require( 'path/to/vendor/umd/math-base-special-kronecker-deltaf/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-kronecker-deltaf@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.kroneckerDeltaf;
-})();
-</script>
+var kroneckerDeltaf = require( '@stdlib/math-base-special-kronecker-deltaf' );
 ```
 
 #### kroneckerDeltaf( i, j )
@@ -121,14 +115,9 @@ v = kroneckerDeltaf( NaN, NaN );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-linspace@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-kronecker-deltaf@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var linspace = require( '@stdlib/array-base-linspace' );
+var kroneckerDeltaf = require( '@stdlib/math-base-special-kronecker-deltaf' );
 
 var x = linspace( -1.0, 1.0, 101 );
 
@@ -136,11 +125,6 @@ var i;
 for ( i = 0; i < x.length; i++ ) {
     console.log( 'kronecker(%d,%d) = %d', x[ i ], 0.0, kroneckerDeltaf( x[ i ], 0.0 ) );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -149,7 +133,89 @@ for ( i = 0; i < x.length; i++ ) {
 
 <!-- C interface documentation. -->
 
+* * *
 
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/kronecker_deltaf.h
+```
+
+#### stdlib_base_kronecker_deltaf( i, j )
+
+Evaluates the Kronecker delta (single-precision).
+
+```c
+float v = stdlib_base_kronecker_deltaf( 3.0f, 3.0f );
+// returns 1.0f
+```
+
+The function accepts the following arguments:
+
+-   **i**: `[in] float` input value.
+-   **j**: `[in] float` input value.
+
+```c
+float stdlib_base_kronecker_delta( const float i, const float j );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/kronecker_deltaf.h"
+#include <stdio.h>
+
+int main( void ) {
+    const float x[] = { 3.0f, 4.0f, 5.0f, 5.0f };
+
+    float y;
+    int i;
+    for ( i = 0; i < 4; i += 2 ) {
+        y = stdlib_base_kronecker_deltaf( x[ i ], x[ i+1 ] );
+        printf( "kronecker_delta(%f, %f) = %f\n", x[ i ], x[ i+1 ], y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
@@ -228,8 +294,11 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [es-module]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
 
 [deno-url]: https://github.com/stdlib-js/math-base-special-kronecker-deltaf/tree/deno
+[deno-readme]: https://github.com/stdlib-js/math-base-special-kronecker-deltaf/blob/deno/README.md
 [umd-url]: https://github.com/stdlib-js/math-base-special-kronecker-deltaf/tree/umd
+[umd-readme]: https://github.com/stdlib-js/math-base-special-kronecker-deltaf/blob/umd/README.md
 [esm-url]: https://github.com/stdlib-js/math-base-special-kronecker-deltaf/tree/esm
+[esm-readme]: https://github.com/stdlib-js/math-base-special-kronecker-deltaf/blob/esm/README.md
 [branches-url]: https://github.com/stdlib-js/math-base-special-kronecker-deltaf/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/math-base-special-kronecker-deltaf/main/LICENSE
@@ -238,7 +307,7 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/special/kronecker-delta]: https://github.com/stdlib-js/math-base-special-kronecker-delta/tree/umd
+[@stdlib/math/base/special/kronecker-delta]: https://github.com/stdlib-js/math-base-special-kronecker-delta
 
 <!-- </related-links> -->
 
