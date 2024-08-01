@@ -41,11 +41,11 @@
   },
   "dependencies": {
     "@stdlib/math-base-assert-is-nanf": "^0.2.2",
-    "@stdlib/math-base-napi-binary": "^0.2.1",
+    "@stdlib/math-base-napi-binary": "^0.3.0",
     "@stdlib/utils-library-manifest": "^0.2.2"
   },
   "devDependencies": {
-    "@stdlib/array-base-linspace": "^0.2.1",
+    "@stdlib/array-base-linspace": "^0.2.2",
     "@stdlib/constants-float32-eps": "^0.2.2",
     "@stdlib/constants-float32-ninf": "^0.2.2",
     "@stdlib/constants-float32-pinf": "^0.2.2",
