@@ -155,7 +155,7 @@ logEachMap( 'kronecker(%0.4f,%0.4f) = %0.4f', x, 0.0, kroneckerDeltaf );
 ### Usage
 
 ```c
-#include "stdlib/math/base/special/kronecker_deltaf.h
+#include "stdlib/math/base/special/kronecker_deltaf.h"
 ```
 
 #### stdlib_base_kronecker_deltaf( i, j )
@@ -173,7 +173,7 @@ The function accepts the following arguments:
 -   **j**: `[in] float` input value.
 
 ```c
-float stdlib_base_kronecker_delta( const float i, const float j );
+float stdlib_base_kronecker_deltaf( const float i, const float j );
 ```
 
 </section>
@@ -251,6 +251,11 @@ For more information on the project, filing bug reports and feature requests, an
 
 ---
 
+## License
+
+See [LICENSE][stdlib-license].
+
+
 ## Copyright
 
 Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
@@ -296,6 +301,8 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 [esm-url]: https://github.com/stdlib-js/math-base-special-kronecker-deltaf/tree/esm
 [esm-readme]: https://github.com/stdlib-js/math-base-special-kronecker-deltaf/blob/esm/README.md
 [branches-url]: https://github.com/stdlib-js/math-base-special-kronecker-deltaf/blob/main/branches.md
+
+[stdlib-license]: https://raw.githubusercontent.com/stdlib-js/math-base-special-kronecker-deltaf/main/LICENSE
 
 [kronecker-delta]: https://en.wikipedia.org/wiki/Kronecker_delta
 
