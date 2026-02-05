@@ -63,6 +63,11 @@ The [Kronecker delta][kronecker-delta] is defined as
 ## Usage
 
 ```javascript
+import kroneckerDeltaf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-kronecker-deltaf@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/math-base-special-kronecker-deltaf/tags). For example,
+
+```javascript
 import kroneckerDeltaf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-kronecker-deltaf@v0.2.3-esm/index.mjs';
 ```
 
@@ -105,7 +110,7 @@ v = kroneckerDeltaf( NaN, NaN );
 
 import uniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-uniform@esm/index.mjs';
 import logEachMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@esm/index.mjs';
-import kroneckerDeltaf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-kronecker-deltaf@v0.2.3-esm/index.mjs';
+import kroneckerDeltaf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-kronecker-deltaf@esm/index.mjs';
 
 var opts = {
     'dtype': 'float32'
